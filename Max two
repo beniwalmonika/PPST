@@ -1,0 +1,9 @@
+#include <iostream>  using namespace std; int main() {
+int a, b;
+cout << "Enter two numbers: " <<endl; cin >> a >> b;
+if(a > b)
+cout << "Maximum = " << a <<endl; else
+cout << "Maximum = " << b <<endl;
+
+return 0;
+}
