@@ -1,0 +1,23 @@
+#include<iostream>	
+#include<cmath>
+#include using namespace std; int main() {
+int ch;
+float r, l, b, h;
+cout << "1. Area of Circle" <<endl; cout << "2. Area of Rectangle" <<endl;
+cout << "3. Volume of Cylinder" <<endl; cout << "Enter choice: ";
+cin >> ch; switch(ch) {
+case 1: cout << "Enter radius: " <<endl; cin >> r;
+cout << "Area = " << 3.14 * r * r <<endl; break;
+case 2:
+cout << "Enter length and breadth: " <<endl; cin >> l >> b;
+cout << "Area = " << l * b <<endl; break;
+
+case 3:
+cout << "Enter radius and height: " <<endl; cin >> r >> h;
+cout << "Volume = " << 3.14 * r * r * h <<endl; break;
+
+default:
+cout << "Invalid choice" <<endl;
+}
+return 0;
+}
