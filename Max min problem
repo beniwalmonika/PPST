@@ -1,0 +1,11 @@
+#include <iostream>	// MONIKA 5130 using namespace std;
+int main() { int a, b, c;
+cout << "Enter three numbers: "; cin >> a >> b >> c;
+if(a >= b && a >= c)
+cout << "Maximum = " << a; else if(b >= a && b >= c)
+cout << "Maximum = " << b; else
+cout << "Maximum = " << c; if(a <= b && a <= c)
+cout << "Minimum = " << a; else if(b <= a && b <= c)
+cout << "Minimum = " << b; else
+cout << "Minimum = " << c; return 0;
+}
