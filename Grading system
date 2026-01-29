@@ -1,0 +1,39 @@
+#include <iostream>	
+using namespace std; int main() {
+int marks, grade;
+cout << "  ## GRADING SYSTEM ##" << endl;
+cout << "90 - 100 : O" << endl; cout << "80 - 89 : A+" << endl; cout << "70 - 79 : A" << endl; cout << "60 - 69 : B+" << endl; cout << "50 - 59 : B" << endl; cout << "40 - 49 : C" << endl;
+ 
+cout << "Less than 40 : FAIL" << endl; cout << "Enter 300000 to exit" << endl; cout << endl;
+while(true) {
+cout << "Enter marks: " << endl; cin >> marks;
+if(marks == 300000) break;
+if(marks > 100 || marks < 0) {
+cout << "Error: Invalid marks" << endl; cout << endl;
+continue;
+}
+grade = marks/10; switch(grade) {
+case 10:
+cout << "Grade: O" << endl; break;
+case 9:
+cout << "Grade: O" << endl; break;
+case 8:
+cout << "Grade: A+" << endl; break;
+case 7:
+cout << "Grade: A" << endl; break;
+case 6:
+cout << "Grade: B+" << endl; break;
+case 5:
+cout << "Grade: B" << endl; break;
+case 4:
+cout << "Grade: C" << endl; break;
+default:
+cout << "Grade: FAIL" << endl;
+}
+
+cout << endl;
+}
+cout << "Program terminated" << endl;
+ 
+return 0;
+}
